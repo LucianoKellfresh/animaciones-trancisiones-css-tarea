@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.btn-modern {
+    border: none;
+    border-bottom: 2px solid darkblue;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-modern:hover {
+    animation: traslado 4s;
+}
+
+@keyframes traslado {
+    0% {
+        background-color: blue;
+        transform: translateX(0%);
+    }
+    100% {
+        background-color: red;
+        color: blue;
+        transform: translateX(0%);
+        transform: translateY(45%);
+    }
+}
